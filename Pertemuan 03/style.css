@@ -135,6 +135,11 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     text-align: left;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .content .item h4 {
@@ -145,5 +150,15 @@ footer p {
 .content .item p {
     font-size: 14px;
     color: #7f8c8d;
+}
+
+.item:hover {
+    opacity:0.6;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    background-color: hsl(0, 0%, 50%);
 }
 
