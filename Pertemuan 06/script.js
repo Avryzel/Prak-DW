@@ -1,4 +1,4 @@
-const apiKey = '1bbf392f3d574a7498f23111241510';  // API key yang Anda dapatkan
+const apiKey = '1bbf392f3d574a7498f23111241510a';  // API key yang Anda dapatkan
 const city = 'Jakarta';
 
 // URL untuk API WeatherAPI
@@ -18,8 +18,11 @@ fetch(apiURL)
         // Menampilkan cuaca hari ini
         const currentWeatherDiv = document.getElementById('current-weather');
         const currentWeather = data.current;
+        const currentIcon = currentWeather.condition.icon;
         currentWeatherDiv.innerHTML = `
+        
             <h2>Cuaca Hari Ini</h2>
+            <img src="${currentIcon}" alt="Ikon Cuaca Saat Ini">
             <p>Suhu: ${currentWeather.temp_c}°C</p>
             <p>Deskripsi: ${currentWeather.condition.text}</p>
             <p>Kecepatan Angin: ${currentWeather.wind_kph} km/h</p>
@@ -33,10 +36,12 @@ fetch(apiURL)
             const date = new Date(day.date);
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const formattedDate = date.toLocaleDateString('id-ID', options);
+            const icon = day.day.condition.icon;
 
             forecastHTML += `
                 <div class="day">
                     <h4>${formattedDate}</h4>
+                    <img src="${icon}" alt="Ikon Cuaca Ramalan">
                     <p>Suhu Siang: ${day.day.maxtemp_c}°C</p>
                     <p>Suhu Malam: ${day.day.mintemp_c}°C</p>
                     <p>Cuaca: ${day.day.condition.text}</p>
