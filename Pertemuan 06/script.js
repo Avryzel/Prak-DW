@@ -1,4 +1,4 @@
-const apiKey = '1bbf392f3d574a7498f23111241510a';  // API key yang Anda dapatkan
+const apiKey = '1bbf392f3d574a7498f23111241510';  // API key yang Anda dapatkan
 const city = 'Jakarta';
 
 // URL untuk API WeatherAPI
