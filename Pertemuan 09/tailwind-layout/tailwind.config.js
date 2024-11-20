@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1E40AF', // Warna biru khusus
-        secondary: '#FBBF24', // Warna kuning khusus
+        primary: '#FFE1FF', 
+        secondary: '#CB9DF0', 
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

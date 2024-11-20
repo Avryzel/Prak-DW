@@ -4,7 +4,7 @@
 
 /* Reusable button style */
 .btn {
-    @apply px-4 py-2 rounded-md text-white bg-primary hover:bg-blue-700;
+    @apply px-4 py-2 rounded-md text-white bg-primary hover:bg-purple-700;
   }
   
 /* Toggle dark mode button */
